@@ -16,10 +16,10 @@ function valor_presente(vf, i, n) {
 
 // i = (vf / vp)^(1/n) - 1
 function interes(vf, vp, n) {
-	return Math.pow(vf / vp, 1 / n) - 1;
+	return ((Math.pow(vf / vp, 1 / n) - 1) * 100).toFixed(0);
 }
 
 // ln(vf/vp)/ln(1+i) = n
 function periodos(vf, vp, i) {
-	return Math.log(vf / vp) / Math.log(1 + i);
+	return (Math.log(vf / vp) / Math.log(1 + i / 100)).toFixed(0);
 }

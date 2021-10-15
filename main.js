@@ -57,14 +57,9 @@ const calculate = (v) => {
 	} else if (v == 'vf') {
 		result = valor_futuro(vp.value, i.value, n.value);
 	} else if (v == 'i') {
-		result = (
-			(Math.pow(vf.value / vp.value, 1 / n.value) - 1) *
-			100
-		).toFixed(0);
+		result = interes(vf.value, vp.value, n.value);
 	} else if (v == 'n') {
-		result = (
-			Math.log(vf.value / vp.value) / Math.log(1 + i.value / 100)
-		).toFixed(0);
+		result = periodos(vf.value, vp.value, i.value);
 	}
 	form.elements[x].value = result;
 };
