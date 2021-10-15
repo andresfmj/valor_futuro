@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+  /* border: 1px solid #ccc; */
+}
+
+#inversion-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inversion-form--inner {
+  /* border: 1px solid #000; */
+  width: 30%;
+}
+
+.form-field {
+  display: flex;
+  padding: 8px;
+}
+
+.form-field .form-field--label {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  margin: 4px;
+}
+
+.form-field input {
+  font: inherit;
+  width: 70%;
+}
+
+button[type="submit"] {
+  font: inherit;
+  width: 10%;
+  cursor: pointer;
+}
