@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valores de una inversion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <form id="inversion-form">
+      <div class="inversion-form--inner">
+        <div class="form-field">
+          <div class="form-field--label">
+            <label for="valor-presente">Valor presente</label>
+          </div>
+          <input type="text" id="valor-presente" name="vp" />
+        </div>
+        <div class="form-field">
+          <div class="form-field--label">
+            <label for="valor-futuro">Valor futuro</label>
+          </div>
+          <input type="text" id="valor-futuro" name="vf" />
+        </div>
+        <div class="form-field">
+          <div class="form-field--label">
+            <label for="interes">Interes</label>
+          </div>
+          <input type="text" id="interes" name="i" />
+        </div>
+        <div class="form-field">
+          <div class="form-field--label">
+            <label for="periodos">Periodos</label>
+          </div>
+          <input type="text" id="periodos" name="n" />
+        </div>
+      </div>
+      <button type="submit">Calcular</button>
+    </form>
+  </div>
+
+  <script src="functions.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
